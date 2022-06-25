@@ -16,3 +16,7 @@ Run container
 ```
 sudo docker run -p 127.0.0.1:420:420 streamlit
 ```
+
+## Notes
+
+There were issues related to websockets not functioning properly. Specifically, this [issue (#2)](https://docs.streamlit.io/knowledge-base/deploy/remote-start). **Solved**: upgrade `nginx`, `http` headers were being stripped.
