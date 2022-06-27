@@ -1,4 +1,4 @@
-# Basic Streamlit app, dockerized with nginx reverse-proxy
+# Basic Streamlit app, with Docker and Nginx reverse-proxy
 
 Install `nginx` and copy config file
 ```
