@@ -18,5 +18,11 @@ sudo docker run -p 127.0.0.1:420:420 streamlit
 ```
 
 ## Notes
-
 There were issues related to websockets not functioning properly. Specifically, this [issue (#2)](https://docs.streamlit.io/knowledge-base/deploy/remote-start). **Solved**: upgrade `nginx`, `http` headers were being stripped.
+
+If you want to add SSL (you should), install `certbot`
+```
+sudo apt-get install python3-certbot-nginx
+sudo certbot --nginx <-d:domain> <domain_name> 
+```  
+Issues may arise, check `CORS` protection and `XSRF` protection in case of errores with certificates
