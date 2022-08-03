@@ -14,7 +14,7 @@ sudo docker build -t streamlit .
 
 Run container
 ```
-sudo docker run -p 127.0.0.1:420:420 streamlit
+sudo docker run -d -p 127.0.0.1:420:420 streamlit
 ```
 
 ## Notes
